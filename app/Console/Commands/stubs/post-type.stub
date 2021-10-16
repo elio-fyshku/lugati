@@ -1,0 +1,16 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyRootNamespace\Base\Database\PostType;
+
+class DummyClass
+{
+    public function create()
+    {
+        return PostType::create()
+            ->slug('dummy-class')
+            ->name(__('Dummy Class', 'textdomain'))
+            ->register();
+    }
+}

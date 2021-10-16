@@ -1,0 +1,41 @@
+.top-header{
+    display: none;
+    @include media-breakpoint-up('md'){
+        display: block;
+        padding: rem(12) 0;
+        background-color: $light;
+    }
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__audit{
+        display: flex;
+    }
+    &__audit-block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: rem(3);
+        padding: rem(10) rem(20);
+        svg{
+            height: rem(20);
+            width: rem(20);
+            fill: $white;
+            margin-right: rem(8);
+        }
+    }
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    &__link{
+        margin-right: rem(12);
+        svg{
+            height: rem(20);
+            width: rem(20);
+            fill: $primary;
+        }
+    }
+}

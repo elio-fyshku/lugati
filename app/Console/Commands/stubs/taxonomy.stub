@@ -1,0 +1,17 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyRootNamespace\Base\Database\Taxonomy;
+
+class DummyClass
+{
+    public function create()
+    {
+        return Taxonomy::create()
+            ->set_object_type(DummyPostTypes)
+            ->slug('dummy-class')
+            ->name(__('Dummy Class', 'textdomain'))
+            ->register();
+    }
+}

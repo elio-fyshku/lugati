@@ -1,0 +1,64 @@
+.home-slider {
+    position: relative;
+    .glide__slide-background {
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+        }
+    };
+    .glide__slides {
+        margin-bottom: 0;
+    }
+    .glide__slide-description {
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .glide__slide-title {
+        color: $white;
+        font-size: rem(24);
+        font-weight: 600;
+        line-height: 1;
+        margin: rem(20) 0;
+        text-transform: uppercase;
+        @include media-breakpoint-up('md') {
+            font-size: rem(34);
+        }
+    }
+    .glide__slide-text {
+        color: $white;
+        line-height: 1.25;
+        margin-bottom: rem(20);
+        letter-spacing: rem(1);
+        font-size: rem(12);
+        text-transform: uppercase;
+    }
+    .btn {
+        transition: all .3s;
+        padding: .75rem 1.5rem;
+        font-weight: 600;
+        @include media-breakpoint-up('md') {
+            min-width: 300px;
+            min-height: 3rem;
+        }
+    }
+    .glide__bullet {
+        height: rem(15);
+        width: rem(15);
+        border-radius: 0;
+        background-color: transparent;
+        border: rem(1) solid $white;
+        &--active {
+            background-color: $white;
+        }
+    }
+}

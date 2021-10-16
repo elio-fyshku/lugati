@@ -1,0 +1,22 @@
+@import 'base';
+@import 'theme';
+@import 'bootstrap';
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import 'components/index';
+@import 'home/index';
+@import 'pages/index';
+
+
+.home-services__description ul {
+    list-style: none;
+}
+
+.home-services__description ul li::before {
+    content: "►";
+    color: $primary;
+    font-weight: bold;
+    display: inline-block;
+    width: rem(20);
+    margin-left: -1em;
+}

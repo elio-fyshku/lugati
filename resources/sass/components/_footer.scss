@@ -1,0 +1,40 @@
+.main-footer {
+    padding: rem(30) 0;
+    border-top: rem(2) solid #f6f6f6;
+    @include media-breakpoint-up('md') {
+        padding: rem(60) 0;
+    }
+    &__logo {
+        @include media-breakpoint-down('md') {
+            margin-bottom: rem(20);
+        }
+        svg {
+            height: 3.125rem;
+        }
+    }
+    &__title {
+        @extend .subtitle;
+        font-weight: 600;
+    }
+    &__description {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    &__menu {
+        @include media-breakpoint-down('md') {
+            margin-bottom: rem(20);
+        }
+    }
+    &__menu-nav {
+        padding: 0;
+        margin-bottom: 0;
+        list-style: none;
+        a {
+            color: $black;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}

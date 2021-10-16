@@ -1,0 +1,15 @@
+.page-cover {
+    position: relative;
+    &__title {
+        position: absolute;
+        top: 50%;
+        color: $white;
+        font-size: rem(30);
+        font-weight: 600;
+        width: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+}

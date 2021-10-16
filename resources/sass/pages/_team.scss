@@ -1,0 +1,45 @@
+.team-single {
+    &__border {
+        padding: rem(30) 0;
+        border: rem(10) solid $primary;
+        @include media-breakpoint-up('md') {
+            border: rem(20) solid $primary;
+            padding: rem(60) 0;
+        }
+    }
+    &__subtitle {
+        @extend .subtitle;
+    }
+    &__title {
+        @extend .title;
+    }
+    &__description {
+        @extend .description;
+    }
+}
+
+.contact-card {
+    padding: rem(20);
+    border-radius: rem(8);
+    background-color: #f8f9fa;
+    &__wrap {
+        margin-bottom: rem(15);
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        svg {
+            height: rem(24);
+            width: rem(24);
+            fill: $primary;
+        }
+        h1 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 0;
+            color: $secondary;
+            margin-left: rem(10);
+            word-break: break-word;
+        }
+    }
+}

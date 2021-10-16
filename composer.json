@@ -1,0 +1,33 @@
+{
+    "name": "dena/taxsolutions-theme",
+    "description": "Tax Solutions Starter Theme",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "denamuca",
+            "email": "denamuca1@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "app/Base/helpers.php",
+            "app/helpers.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "minimum-stability": "beta",
+    "require": {
+        "symfony/debug": "^4.1",
+        "symfony/finder": "^4.1",
+        "monolog/monolog": "^1.23",
+        "filp/whoops": "^2.2",
+        "symfony/http-foundation": "^4.1",
+        "meyfa/php-svg": "^0.9.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.1"
+    }
+}
