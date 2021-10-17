@@ -1,0 +1,88 @@
+.newsletter-section{
+    background: #f7f7f7;
+    color: #fff;
+    padding: 80px 0;
+    &__wrap{
+        background: #000 url(https://justintimberlake.com/wp-content/themes/justintimberlake/assets/images/bundle.jpg) right center no-repeat;
+        background-size: cover;
+        position: relative;
+        text-align: left;
+        padding: 60px;
+        &:after{
+            background: rgba(0,0,0,0.35);
+            content: '';
+            display: none;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+    &__title{
+        color: $white;
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        line-height: 50px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    &__description{    
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 0 45px;
+        max-width: 400px;
+        text-transform: none;
+    }
+    &__btn{
+        background: $white;
+        color: $black;
+        border-radius: 0;
+        font-size: 12px;
+        font-weight: bold;
+        height: 40px;
+        letter-spacing: 1px;
+        padding: 12px 25px;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover{
+            background: #888583;
+            text-decoration: none;
+            color: $white;
+
+        }
+        &:after{
+            border: 2px solid $black;
+            border-bottom: none;
+            border-left: none;
+            border-radius: 2px;
+            content: '';
+            display: inline-block;
+            height: 10px;
+            margin-left: 15px;
+            position: relative;
+            top: -2px;
+            width: 10px;
+            transform: rotate(45deg);
+            transform-origin: left top;
+            &:hover{
+                border-color: $white;
+            }
+        }
+    }
+    &__no{
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: center;
+        color: #888583;
+        text-decoration: none !important;
+        transition: all .2s linear;    
+        padding: 30px 0 0;
+        &:hover{
+            color: $black;
+        }
+    }
+}

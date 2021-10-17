@@ -2,28 +2,63 @@
     display: none;
     @include media-breakpoint-up('md'){
         display: block;
-        padding: rem(12) 0;
         background-color: $light;
     }
     &__wrap{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
     }
     &__audit{
         display: flex;
     }
     &__audit-block{
+        text-decoration: none;
+
+    }
+    &__audit-block h1{
         display: flex;
         align-items: center;
-        justify-content: center;
-        border-radius: rem(3);
-        padding: rem(10) rem(20);
-        svg{
-            height: rem(20);
-            width: rem(20);
-            fill: $white;
-            margin-right: rem(8);
+        line-height: 40px;
+        padding: 0 20px;
+        color: $black;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-decoration: none;
+
+    }
+    &__audit-btn{
+        background: #888583;
+        color: $white;
+        border-radius: 0;
+        font-size: 12px;
+        font-weight: bold;
+        height: 40px;
+        letter-spacing: 1px;
+        padding: 12px 25px;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover{
+            background-color:#6e6c6a;
+            text-decoration: none;
+            color: $white;
+
+        }
+        &:after{
+            border: 2px solid #fff;
+            border-bottom: none;
+            border-left: none;
+            border-radius: 2px;
+            content: '';
+            display: inline-block;
+            height: 10px;
+            margin-left: 15px;
+            position: relative;
+            top: -2px;
+            width: 10px;
+            transform: rotate(45deg);
+            transform-origin: left top;
         }
     }
 }

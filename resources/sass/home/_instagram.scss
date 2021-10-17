@@ -1,0 +1,14 @@
+.instagram-section{
+    background-color: $black;
+    padding: 60px 0 30px;
+    &__title{
+        color: $white;
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        line-height: 50px;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+}

@@ -1,36 +1,55 @@
 .music-section {
     position: relative;
+    margin: 10px 0;
+    background: #fff;
+    padding: 150px 0;
+    text-align: center;
     &__bg{
-        padding: 150px 0;
         background-color: #f2f2f2;
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
         left: 0;
-        position: relative;
+        position: absolute;
         top: 0;
         width: 100%;
         filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
         filter: alpha(opacity=35);
         opacity: .35;
         zoom: 1;
     }
     &__title{
-        font-family: "groteskblack",sans-serif;
+        color: $black;
+        font-size: 40px;
         font-weight: 900;
         letter-spacing: 2px;
-        line-height: 1.25;
-        margin: 0;
-        padding: 0;
+        line-height: 50px;
+        padding-bottom:15px;
         text-transform: uppercase;
-
+        margin-bottom: 30px;
     }
-
-
+    &__btn{
+        background: #000;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        font-family: "groteskblack",sans-serif;
+        font-size: .85714em;
+        font-weight: 700;
+        outline: none !important;
+        padding: 15px 30px;
+        position: relative;
+        text-transform: uppercase;
+        transition: all .2s linear;
+        &:hover{
+            background: #b7b7b7;
+            border-color: #b7b7b7;  
+            color: $white;
+            text-decoration: none;
+        }
+    }
     &__wrap{
-
         text-align: center;
     }
 
